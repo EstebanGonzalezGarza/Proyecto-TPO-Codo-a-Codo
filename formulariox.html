@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario de registro</title>
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="contenedor">
+		<h1>Formulario de registro</h1>
+		<form id="formulario">
+			<label for="nombre">Nombre*</label>
+			<input type="text" id="nombre" name="nombre" required>
+			<label for="apellido">Apellido*</label>
+			<input type="text" id="apellido" name="apellido" required>
+			<label for="fecha_nacimiento">Fecha de nacimiento*</label>
+			<input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+			<label for="dni">DNI*</label>
+			<input type="number" id="dni" name="dni" minlength="8" maxlength="8" required>
+			<label>Género*</label>
+			<div class="radio-group">
+				<label for="masculino">Masculino</label>
+				<input type="radio" id="masculino" name="genero" value="masculino" required>
+				<label for="femenino">Femenino</label>
+				<input type="radio" id="femenino" name="genero" value="femenino">
+				<label for="otro">Otro</label>
+				<input type="radio" id="otro" name="genero" value="otro">
+			</div>
+			<label for="nacionalidad">Nacionalidad*</label>
+			<input type="text" id="nacionalidad" name="nacionalidad" required>
+			<label for="pais_residencia">País de residencia*</label>
+			<input type="text" id="pais_residencia" name="pais_residencia" required>
+			<label for="comentarios">Comentarios</label>
+			<textarea id="comentarios" name="comentarios"></textarea>
+			<button type="submit">Enviar</button>
+			<input type="reset" value="Borrar todo">
+		</form>
+	</div>
+</body>
+</html>
