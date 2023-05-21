@@ -1,0 +1,190 @@
+*{
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+    
+}
+
+
+/* Header */
+header {
+  width: 100%;
+
+  position: fixed;
+  margin: 0;
+  background-color: #fbfcfcf4;
+}
+
+
+/* Nav*/
+nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 140px;
+  margin-left: 20px;
+}
+
+.bar-btn {
+  font-size: 25px;
+  color: #268aa3;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.nav-menu {
+  position: fixed;
+  width: 100%;
+  height: 0;
+  top: 100px;
+  background: rgba(17, 151, 160, 0.321);
+
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.nav-menu li {
+  display: none;
+  line-height: 30px;
+  margin: 50px 0;
+  transition: all 0.5s;
+}
+
+.nav-menu li a {
+  color: #0989c9;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.nav-menu li a:hover {
+  color: rgb(165, 32, 11);
+  transform: scale(1.2);
+  transition: 0.3s;
+
+}
+
+/* Ocultamos el checkbox */
+#check {
+  display: none;
+}
+
+#check:checked ~ nav .nav-menu {
+  height: 100vh;
+}
+
+
+/* Responsivo en dispositivos */
+@media screen and (min-width: 800px) {
+  .logo {
+    margin-left: 50px;
+  }
+
+  nav {
+    height: 100px;
+  }
+
+  .bar-btn {
+    display: none;
+  }
+
+  .nav-menu {
+    position: relative;
+    height: auto;
+    top: 0;
+    background: none;
+    transition: none;
+    text-align: right;
+    margin-right: 50px;
+  }
+
+  .nav-menu li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 20px;
+    transition: none;
+  }
+
+  .nav-menu li a {
+    font-size: 12px;
+  }
+}
+
+
+/*footer*/
+  
+footer {
+    background-color: #268aa3; 
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  footer section {
+    padding: 0;
+  }    
+
+  #mapa{
+    width: 200px;
+    height: 150px;
+  }
+  
+  #pie_pagina {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #pie_pagina section {
+    width: 30%; /* Cada sección ocupa el 20% del ancho del contenedor */
+    padding: 20px 0;
+    box-sizing: border-box;
+  }
+  #suscripcion article {
+
+    margin-bottom: 100px; /*separacion de los h3*/
+  }    
+
+  #contacto h3, #contacto iframe, #contacto p {
+  margin-bottom: 10px;
+  }
+
+  
+  #logodefooter {
+    flex-basis: 30%; /* El logotipo ocupa el 30% del ancho del contenedor */
+    text-align: center;
+    
+  }
+
+  #redes_sociales {
+    width: 100%;
+    text-align: center;
+    }
+
+  #redes_sociales a {
+    font-size: 38px; /* Ajusta el tamaño de fuente */
+    margin-right: 24px; /* Agrega un margen derecho entre los iconos */
+    color: #fbfcfc; /* Cambia el color a blnco */
+ }
+ 
+ #redes_sociales a i:hover {
+    color: rgb(204, 0, 255); /* Cambia el color al pasar el mouse por encima */
+    transform: scale(1.2); /* Aumenta el tamaño del icono al 120% al pasar el mouse por encima */
+ }
+  
+  @media (max-width: 700px) {
+    #pie_pagina section {
+      width: 100%; /* En pantallas menores a 700px, cada sección ocupa el 100% del ancho del contenedor */
+    }
+  }
+  
+/* fin del footer */
